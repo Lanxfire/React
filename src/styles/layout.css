@@ -1,0 +1,102 @@
+/* layout.css - Menú lateral con estilo profesional sin íconos, con degradado y tipografía clara */
+
+.layout {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, #2c3e50, #34495e);
+  padding: 20px;
+  color: #ecf0f1;
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-item {
+  margin: 10px 0;
+  position: relative;
+}
+
+.menu-item a,
+.menu-title {
+  display: block;
+  padding: 12px 18px;
+  color: #ecf0f1;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.menu-item a:hover,
+.menu-title:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.menu-item a.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+}
+
+.submenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background: linear-gradient(180deg, #34495e, #2c3e50);
+  min-width: 180px;
+  border-radius: 6px;
+  padding: 10px 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(10px);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.has-submenu:hover .submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.submenu li {
+  padding: 0;
+}
+
+.submenu a {
+  display: block;
+  padding: 10px 20px;
+  color: #ecf0f1;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.submenu a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 24px;
+  background-color: #f9f9fb;
+  overflow-y: auto;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+
+.menu-divider {
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  margin: 20px 0;
+}
