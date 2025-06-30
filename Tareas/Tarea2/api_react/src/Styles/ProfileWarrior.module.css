@@ -1,0 +1,296 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  color: #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+}
+
+.card {
+   max-width: 1000px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 145, 0, 0.2);
+}
+
+.title {
+  font-size: 24px;
+  color: orange;
+  margin-bottom: 10px;
+}
+
+.mainImage {
+  width: 220px;
+  height: auto;
+  border-radius: 12px;
+  border: 3px solid #ffa726;
+}
+
+.profileContent {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 30px;
+  margin: 20px 0;
+  flex-wrap: nowrap;
+}
+
+
+.dataSection {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 2rem;
+}
+
+.leftColumn {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.rightColumn {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Planet Styles */
+.planetCard {
+  margin-top: 40px;
+}
+
+.planetTitle {
+  text-align: left;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.planetContent {
+ display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-top: 10px;
+  flex-wrap: wrap; /* Para móviles */
+}
+
+
+.planetImage {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.planetDescription {
+  max-width: 600px;
+  color: #ddd;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/* Transformation Cards style */
+.transformations {
+  width: 100%;
+}
+
+.transformationGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.transformationCard {
+  background-color: #1a1a1a;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 165, 0, 0.3);
+  text-align: center;
+  width: 180px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+}
+
+.transformationCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.4);
+}
+
+.transformationCard img {
+  max-height: 160px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.transformationCard h3 {
+  font-size: 0.85rem;
+  margin: 8px 0 4px;
+}
+
+.transformationCard p {
+  font-size: 0.75rem;
+  color: #ccc;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px 0;
+  background-color: #111; /* Fondo oscuro opcional */
+  border-bottom: 1px solid #333;
+  margin-bottom: 30px;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 10px;
+}
+
+.controls input,
+.controls select {
+  padding: 10px;
+  background-color: #1f1f1f;
+  color: #fff;
+  border: 1px solid orange;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.5);
+  outline: none;
+}
+
+.controls input:focus,
+.controls select:focus {
+  box-shadow: 0 0 10px #ffa726;
+}
+
+.resultText {
+  font-size: 16px;
+  color: #f1c40f;
+  font-weight: bold;
+}
+
+
+.noCharacterMessage {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: orange;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.stats {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(255, 165, 0, 0.3);
+  font-size: 1.1rem;
+  color: #f1f1f1;
+  min-height: 100%;
+  width: 100%;
+  max-width: 320px;
+}
+
+.stats h2 {
+  font-size: 1.3rem;
+  color: #ffa726;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.stats p {
+  margin: 10px 0;
+  font-weight: 500;
+}
+
+/* Tablet: */
+@media (max-width: 1199px) {
+  .dataSection {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .transformationGrid {
+    justify-content: center;
+  }
+
+  .transformationCard {
+    width: 45%; /* dos columnas */
+  }
+
+  .planetContent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .planetImage {
+    width: 90%;
+  }
+}
+
+/* Celular: 1 columna de transformación */
+@media (max-width: 768px) {
+  .profileContent {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mainImage {
+    width: 150px;
+  }
+
+  .transformationCard {
+    width: 100%;
+  }
+
+  .controls {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .controls input,
+  .controls select {
+    width: 90%;
+  }
+
+  .planetContent {
+    flex-direction: column;
+  }
+
+  .planetImage {
+    width: 100%;
+  }
+
+  .planetDescription {
+    text-align: center;
+  }
+
+  .stats {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+
+

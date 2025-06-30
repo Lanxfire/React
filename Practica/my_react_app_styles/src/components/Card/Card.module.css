@@ -1,0 +1,9 @@
+.card
+{
+  padding: 1rem;
+  background: lightblue;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-family: sans-serif;
+
+}

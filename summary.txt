@@ -1,0 +1,122 @@
+FRO-03 - Desarrollo de aplicaciones web con REACT - M4 - Scotia Bank
+Mon, Jun 23, 2025
+
+Summary:
+
+Se discutieron diversos aspectos del desarrollo de aplicaciones web utilizando React, comenzando con un resumen de la clase anterior sobre hooks como useState y useEffect. Los participantes compartieron sus proyectos, donde se abordaron temas como la estructura de componentes, la gestión de errores al cargar datos desde APIs y la importancia de aplicar principios de diseño atómico para mantener el código limpio. Se enfatizó la necesidad de informar al usuario sobre la disponibilidad de datos y se sugirieron mejoras en la estructura de los componentes para facilitar su mantenimiento.
+
+La conversación se centró en la transferencia de constantes y funciones entre componentes, destacando la importancia de pasar funciones para modificar el estado en componentes hijos. Se compartieron experiencias personales sobre la implementación de proyectos, donde se discutieron dificultades y soluciones encontradas. David Rafael Luna González subrayó la relevancia de aplicar buenas prácticas en la gestión de APIs, como el uso de promesas y el manejo de errores, así como la importancia de la navegación en aplicaciones de una sola página (SPA).
+
+Se abordó la implementación de React Router DOM, incluyendo la configuración de rutas y la creación de un layout que contenga elementos como cabecera y pie de página. Se discutieron errores específicos en la carga de productos y la configuración de rutas, donde los participantes colaboraron para identificar y corregir problemas en el código. Se propusieron ejercicios prácticos para que los asistentes aplicaran los conceptos discutidos, como la creación de un menú en la página de productos.
+
+Finalmente, se presentó un plan para el desarrollo de una página web utilizando React, enfatizando la creación de un layout con al menos cuatro páginas y un menú interno. Se sugirió la revisión de librerías de UI para facilitar el desarrollo y se establecieron expectativas para que cada equipo avance en su landing page. Se acordó que el trabajo se dividiría entre los participantes y se ofreció apoyo adicional a través de un repositorio de ejercicios en Moodle.
+
+
+Chapters & Topics:
+
+Resumen de la clase pasada y presentación de tareas
+David Rafael Luna González pidió un resumen de la clase anterior, y Carlos Saborio recordó que se abordaron los hooks useState y useEffect. Roy Calderon Ramirez presentó su tarea, que consistía en una aplicación que utiliza un API de Dragon Ball, y explicó cómo implementó diferentes componentes y funcionalidades en su proyecto.
+* Comparación de diferentes enfoques para el manejo de estados en React.
+
+Discusión sobre el manejo de errores y mejoras en la interfaz de usuario en aplicaciones web con REACT
+David Rafael Luna González y Roy Calderon Ramirez enfatizaron la relevancia de controlar errores al cargar datos desde un JSON, sugiriendo que es fundamental notificar al usuario cuando no hay información. Cristian Castillo compartió su experiencia con una API de fútbol, describiendo cómo organizó su código para mostrar alineaciones y equipos, y mencionó la implementación de un loader para mejorar la experiencia del usuario.
+* Manejo de errores al cargar datos desde un API.
+
+   Desarrollo de Componentes en REACT
+   Christopher Vega Araya y Jairo Josue Garita Rojas abordaron el tema de pasar variables y funciones entre componentes en REACT. Jairo compartió su experiencia al implementar un proyecto relacionado con películas, donde tuvo que descargar imágenes debido a bloqueos en su computadora. También mencionó el uso de `useState` para gestionar el estado de los componentes.
+
+Revisión de Proyectos de Aplicaciones Web con REACT
+Jairo Garita Rojas comentó sobre el tiempo que le llevó completar su tarea, mientras que Xiomara Matamoros presentó su enfoque al utilizar un API para obtener datos. David Rafael Luna González enfatizó la necesidad de dividir el código en componentes para facilitar su reutilización y mantener una estructura ordenada.
+* Estructuración de componentes y diseño atómico.
+
+Conexión a APIs y Manejo de Promesas en JavaScript
+David Rafael Luna González presentó varias formas de conectarse a APIs, destacando el uso de promesas y el manejo de errores. Se discutió cómo `async-await` puede hacer que el código asíncrono sea más legible y se mencionó la importancia de utilizar `Promise.all` para ejecutar múltiples endpoints simultáneamente.
+* Implementación de APIs en proyectos de React.
+
+Navegación en Aplicaciones SPA con React
+David Rafael Luna González abordó la necesidad de implementar navegación en aplicaciones React, sugiriendo que los participantes se familiaricen con el concepto de Single Page Applications (SPA). Se explicó que las SPA permiten que el contenido se actualice dinámicamente, lo que resulta en una experiencia de usuario más fluida y rápida. Además, se mencionó que el uso de enlaces tradicionales en HTML no es adecuado para este tipo de aplicaciones.
+* Implementación de la navegación en React.
+* Introducción a la navegación en aplicaciones de página única (SPA) usando React Router.
+
+Desarrollo de aplicaciones web con React Router DOM
+David Rafael Luna González presentó cómo utilizar React Router DOM para crear una aplicación de una sola página (SPA). Se abordó la instalación de la librería y la configuración de rutas, así como la creación de un layout que incluye componentes como cabecera y pie de página. También se mencionó la funcionalidad de los enlaces y cómo se pueden manejar rutas anidadas.
+
+Desarrollo de aplicaciones web con REACT
+David Rafael Luna González detalló el uso de enlaces en el router de React, enfatizando la capacidad de pasar parámetros a los componentes, como el Product Detail. Se discutió la creación de un componente de navegación y se presentaron ejemplos de aplicaciones que utilizan múltiples menús y rutas, lo que permite una experiencia de usuario más dinámica.
+* Uso de React Router para manejar rutas.
+
+Desarrollo de componentes en REACT
+David Rafael Luna González guió a los asistentes en la creación de un componente "layout" y la revisión de los estilos y enlaces del menú. Se sugirió utilizar componentes previamente creados, como "About" y "Products", y se mencionó la importancia de ajustar las rutas para evitar confusiones. También se abordó la creación de componentes adicionales y la necesidad de unificar el trabajo entre los participantes.
+* Creación de componentes dentro del proyecto.
+
+Desarrollo de aplicaciones web con REACT - M4 - Scotia Bank
+David Rafael Luna González aclaró que el router debe ser configurado en minúscula y que el layout debe ser el que maneje la visualización de la aplicación. Se mencionó que es necesario inyectar el router en el router provider para que las rutas se carguen correctamente. Christopher Vega Araya y otros participantes hicieron preguntas sobre la implementación de los componentes.
+
+Resolución de Errores en el Desarrollo de Aplicaciones Web con REACT
+David Rafael Luna González lideró la discusión sobre errores en la aplicación web, centrándose en problemas de carga de componentes y rutas. Se identificaron errores en el uso de imports y la configuración del router, lo que generó confusión entre los participantes. Cristian Castillo y Kenneth Salicetti también contribuyeron a la resolución de estos problemas.
+
+ Revisión de la estructura del proyecto en REACT
+ Manuel Rivera Coto y David Rafael Luna González trabajaron en la configuración del router y la carga de componentes en el proyecto de REACT. Se detectaron problemas con la página de detalles del producto y la duplicación de la página de inicio. Se propusieron ajustes en el código para resolver estos inconvenientes.
+
+Resolución de problemas en el desarrollo de aplicaciones web con REACT
+Christopher Vega Araya y David Rafael Luna González trabajaron en la resolución de errores en la aplicación, centrándose en la carga de productos y la identificación de componentes. Se discutieron detalles sobre el uso de exportaciones en el código y se realizaron pruebas para verificar la funcionalidad de los elementos. Gabriel Sanabria Vega también participó, compartiendo sus propios problemas técnicos.
+
+Problemas y soluciones en el desarrollo de aplicaciones web con REACT
+Manuel Rivera Coto identificó un problema con la coincidencia de IDs en la página de lista de productos, sugiriendo eliminar la letra "P" de los IDs. David Rafael Luna González y otros participantes colaboraron para revisar el código y proponer soluciones, incluyendo ajustes en la exportación de constantes y la eliminación de imágenes innecesarias.
+
+Desarrollo de Rutas y Menús en Aplicaciones Web con REACT
+David Rafael Luna González abordó la configuración de rutas y layouts en aplicaciones REACT, enfatizando la necesidad de un router provider. Se planteó un reto para que los asistentes desarrollaran un menú con dos opciones, "Categoría" e "Inventario", en la sección de productos, con el objetivo de aplicar lo aprendido.
+* Uso y configuración de routers en el proyecto.
+* Ejercicio práctico sobre la creación de un menú en la página de productos.
+
+Revisión de grupos y participantes del proyecto
+David Rafael Luna González organizó los grupos de trabajo, mencionando a los integrantes de los grupos 1, 2, 3 y 4. Se notó la ausencia de algunos participantes, como José Ulet y Paola, que no estaban incluidos en el correo. Se acordó que David buscaría a los faltantes para completar la lista.
+
+Desarrollo de Aplicaciones Web con React - Manejo de Routers
+David Rafael Luna González destacó la relevancia de comprender el uso de routers en React para evitar limitaciones en la distribución de la aplicación. Chaves Selva, Adonay, explicó su enfoque al agregar un adverb con categorías e inventario, mientras que Gabriel Sanabria Vega mencionó un error al intentar crear múltiples routers en un solo archivo.
+* Creación de páginas de categoría e inventario.
+
+Desarrollo de la Página Web para Scotiabank con React
+David Rafael Luna González guió a los participantes en la creación de una página web para un proyecto utilizando React, destacando la necesidad de un layout con al menos cuatro secciones y un menú. Se discutieron los elementos que debe incluir la página, como un carrusel de promociones y un formulario de contacto. Además, se advirtió sobre la importancia de no utilizar el nombre "Scotiabank" en el proyecto por motivos de seguridad.
+* Evaluación de avances y entregas del proyecto.
+
+Selección de Librerías de UI para React
+David Rafael Luna González explicó que existen múltiples librerías de UI para React, como Prime React, que pueden simplificar el trabajo al proporcionar componentes listos para usar. Se recomendó a los participantes que evaluaran diferentes opciones y decidieran cuál utilizar para su proyecto, además de distribuir el trabajo de la landing page.
+* Estilos y diseño de la interfaz de usuario.
+* Selección de librerías de UI para el desarrollo.
+
+
+Action Items:
+
+* Roy Calderon Ramirez mostrará su tarea y explicará cómo implementó el API de Dragon Ball.
+* Cristian Castillo presentará su tarea sobre el API de fútbol y explicará su implementación.
+* Jairo Garita Rojas explicará cómo implementó su tarea sobre películas y el uso del API.
+* Xiomara Matamoros compartirá su implementación del API y discutirá su enfoque.
+* David Rafael Luna González creará un componente que tenga la navegación dentro del proyecto.
+* David Rafael Luna González revisará los componentes que los estudiantes han creado en su proyecto.
+* David Rafael Luna González pedirá a los estudiantes que creen un menú dentro de la página de productos con opciones de Categoría e Inventario.
+* David Rafael Luna González revisará el código de la tarea de Roy Calderon Ramirez y proporcionará retroalimentación sobre la estructura de los componentes.
+* Chaves Selva, Adonay creará las páginas de categoría e inventario en el proyecto.
+* David Rafael Luna González compartirá el proyecto del Avan para revisión.
+* David Rafael Luna González compartirá un código para el layout que tiene los estilos necesarios.
+* David Rafael Luna González subirá el proyecto y la presentación al Moodle para que los participantes lo revisen.
+* David Rafael Luna González solicitará que cada participante comience a distribuirse el trabajo para la landing page.
+* David Rafael Luna González pedirá a los participantes que decidan qué librería de UI van a usar para el proyecto.
+
+
+Key Questions:
+
+* ¿Cómo se puede mejorar la estructura de los componentes en la tarea de Xiomara Matamoros?
+* ¿Qué errores se encontraron al cargar el JSON de transformaciones en la tarea de Roy Calderon Ramirez?
+* ¿Cómo se puede pasar un estado de un componente padre a un componente hijo en React?
+* ¿Qué es una aplicación de página única (SPA)?
+* ¿Cómo se implementa la navegación en el componente de productos?
+* ¿Cómo se llama el componente que se debe usar para la navegación?
+* ¿Qué errores se están presentando al cargar los componentes?
+* ¿Cómo se debe estructurar el trabajo en equipo para la landing page?
+* ¿Qué librería de UI se debería elegir para el proyecto?
+
+
+Notepad:
+
+* No notes
