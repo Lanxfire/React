@@ -1,7 +1,14 @@
 import CarouselBanner from '../Components/Landing/Carrousel/CarouselBanner';
+import DataContext from '../context/DataContext/DataContext';
+import React, { useContext } from 'react';
+
+
 
 const Home = () => {
-    return (
+const ctx = useContext(DataContext);     
+console.log(ctx.valor1);
+
+return (
         <div>
             <div>
                 <h2>Bienvenido a la Pagina de Inicio</h2>
@@ -9,8 +16,10 @@ const Home = () => {
             <div>
                 <CarouselBanner />
                 <section style={{ padding: '2rem' }}>
+                    
                     <h2>Servicios Medicos Destacados</h2>
-                    <p>Gestión y Atencion de Primera Calidad</p>
+                    <p>Gestión y de Primera Calidad</p>
+
                 </section>
             </div>
         </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import { createRoot } from 'react-dom/client';
+import DataContext from './context/DataContext/DataContext';
 
 /*Bootstrap*/
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -53,9 +54,10 @@ const router = createBrowserRouter([
     }
   ]);
 
-
+  
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <DataContext.Provider value={{valor1: "Prueba", valor2: "Context"}}/>
     <RouterProvider router={router}/>
   </React.StrictMode>,
 )
