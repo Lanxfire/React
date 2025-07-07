@@ -1,0 +1,15 @@
+{
+  "name": "jsonserver",
+  "version": "1.0.0",
+  "description": "Proyecto JSON Server para pruebas de API",
+  "main": "index.js",
+  "scripts": {
+    "dev": "json-server --watch db.json --port 3002"
+  },
+  "keywords": ["json-server", "api", "mock"],
+  "author": "TuNombre",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}

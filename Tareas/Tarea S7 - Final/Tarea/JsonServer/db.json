@@ -1,0 +1,19 @@
+{
+    "carrousel": [
+        {
+            "title": "Servicios Medicos",
+            "description": "Diversidad de Servicios Medicos",
+            "image": "https://www.medica-a1.com/uploads/1524197563074_ES_3.png"
+        },
+        {
+            "title": "Descuentos Medicos",
+            "description": "Multiples Descuento en relacion al Servicio",
+            "image": "https://descuentosmedicos.co/assets/LANDING%20GENERATOR/landing-img-descuentos.png"
+        },
+        {
+            "title": "Educacion Medica",
+            "description": "El futuro esta en el conocimiento",
+            "image": "https://pbs.twimg.com/media/D_spr-xXsAE59Ss.png"
+        }
+    ]
+}
